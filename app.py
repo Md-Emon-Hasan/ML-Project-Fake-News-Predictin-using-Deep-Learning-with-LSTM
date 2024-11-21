@@ -31,7 +31,7 @@ nltk.download('stopwords')
 app = Flask(__name__)
 
 # Load model and tokenizer
-model = load_model('./models/CNN_LSTM_Hybrid_model.h5')
+model = load_model('./models/simple_lstm_model.h5')
 with open('./models/tokenizer.pkl', 'rb') as f:
     tokenizer = pickle.load(f)
 
